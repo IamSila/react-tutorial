@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Student from './Student';
 
 const TableHeader = () => {
     return (
@@ -28,7 +27,6 @@ const TableBody = (props) => {
 class Table extends Component {
     render() {
         const { characterData } = this.props;
-        const { studentDetails } = this.props;
         return (
             <table>
                 <TableHeader />

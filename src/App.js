@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Table from './Table';
-import Student from './Student';
 
 class App extends Component {
     render() {
@@ -27,7 +26,7 @@ class App extends Component {
             }
         ]
         
-        const details = [
+        /* const details = [
             {
                 "name": "Sila",
                 "age": 30,
@@ -48,16 +47,12 @@ class App extends Component {
                 "age": 30,
                 "course": "website development",
             },
-        ]
+        ] */
     return (
         <>
             <div className="container">
                 <h1>hello, this is a table component inside app component</h1>
                 <Table characterData={ characters } />
-            </div>
-            <div>
-                <p>Student details</p>
-                <Student studentDetails={details} />
             </div>
         </>
     )
